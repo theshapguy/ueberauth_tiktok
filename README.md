@@ -19,7 +19,7 @@
     ```elixir
     def deps do
       [
-        {:ueberauth_tiktok,  git: "https://github.com/theshapguy/ueberauth_tiktok"}
+        {:ueberauth_tiktok, "~> 0.1.0"}
       ]
     end
     ```
@@ -110,22 +110,10 @@ Copyright (c) 2024 Shapath Neupane
 
 This library is released under the MIT License. See the [LICENSE.md](./LICENSE.md) file
 
+## Docs
 
-## Installation via Hex
-> Currently not published to Hex, once I find time to write the tests it will be published to Hex
+Published at [HexDocs](https://hexdocs.pm/ueberauth_tiktok).
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `ueberauth_tiktok` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:ueberauth_tiktok, "~> 0.1.0"}
-  ]
-end
-```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/ueberauth_tiktok>.
-
+## Notes
+1. The TikTok API does not allow redirect URIs with port numbers in the staging environment. For more information, see [this Stack Overflow answer](https://stackoverflow.com/a/73533804).
+2. Use `TIKTOK_CLIENT_KEY` instead of `TIKTOK_CLIENT_ID` as TikTok's OAuth implementation provides a client key.
