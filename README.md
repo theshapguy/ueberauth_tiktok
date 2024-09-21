@@ -1,12 +1,9 @@
 # Überauth Tiktok
 
-<!-- [![Build Status](https://travis-ci.org/ueberauth/ueberauth_github.svg?branch=master)](https://travis-ci.org/ueberauth/ueberauth_github)
-[![Module Version](https://img.shields.io/hexpm/v/ueberauth_github.svg)](https://hex.pm/packages/ueberauth_github)
-[![Hex Docs](https://img.shields.io/badge/hex-docs-lightgreen.svg)](https://hexdocs.pm/ueberauth_github/)
-[![Total Download](https://img.shields.io/hexpm/dt/ueberauth_github.svg)](https://hex.pm/packages/ueberauth_github)
--->
-
-[![Last Updated](https://img.shields.io/github/last-commit/theshapguy/ueberauth_tiktok.svg)](https://github.com/ueberauth/ueberauth_github/commits/master)
+[![Module Version](https://img.shields.io/hexpm/v/ueberauth_tiktok.svg)](https://hex.pm/packages/ueberauth_tiktok)
+[![Hex Docs](https://img.shields.io/badge/hex-docs-lightgreen.svg)](https://hexdocs.pm/ueberauth_tiktok/)
+[![Last Updated](https://img.shields.io/github/last-commit/theshapguy/ueberauth_tiktok.svg)](https://github.com/theshapguy/ueberauth_tiktok/commits/master)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 > Tiktok OAuth2 strategy for Überauth.
 
@@ -108,7 +105,7 @@ config :ueberauth, Ueberauth,
 
 Copyright (c) 2024 Shapath Neupane
 
-This library is released under the MIT License. See the [LICENSE.md](./LICENSE.md) file
+This library is released under the MIT License. See the [LICENSE](./LICENSE) file
 
 ## Docs
 
@@ -117,3 +114,4 @@ Published at [HexDocs](https://hexdocs.pm/ueberauth_tiktok).
 ## Notes
 1. The TikTok API does not allow redirect URIs with port numbers in the staging environment. For more information, see [this Stack Overflow answer](https://stackoverflow.com/a/73533804).
 2. Use `TIKTOK_CLIENT_KEY` instead of `TIKTOK_CLIENT_ID` as TikTok's OAuth implementation provides a client key.
+3. The TikTok API does not return the user's email. Instead, it provides a unique `open_id`. Architect your app accordingly.
